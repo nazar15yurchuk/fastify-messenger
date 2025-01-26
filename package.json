@@ -1,0 +1,38 @@
+{
+  "name": "fastify-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rimraf dist && tsc-watch --onSuccess \"npm run watch\"",
+    "watch": "nodemon \"src/index.ts\" --watch \"./src\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@fastify/basic-auth": "^6.0.3",
+    "@fastify/multipart": "^9.0.3",
+    "fastify": "^5.2.1",
+    "mime-types": "^2.1.35",
+    "nodemon": "^3.1.9",
+    "rimraf": "^6.0.1",
+    "tsc-watch": "^6.2.1"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.2.1",
+    "@types/bcrypt": "^5.0.2",
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^22.10.10",
+    "bcrypt": "^5.1.1",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "prisma": "^6.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.21.0"
+  }
+}
